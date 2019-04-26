@@ -1,0 +1,13 @@
+.label{
+
+    font-family: 'BravoRG';
+    color:#2f3133;
+    font-size: 60px;
+    margin: 10px;
+}
+@media (max-width:540px){
+    .label{
+        font-size: 40px;
+        margin: 5px;
+    }
+}

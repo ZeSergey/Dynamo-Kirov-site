@@ -1,0 +1,61 @@
+.progress{
+    height: 470px;
+    padding-top:50px ;
+    background-image: url(./img/prog1.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%; 
+
+}
+.progress__date{
+    font-family: 'PTSans-Regular', arial;
+    font-size: 14px;
+    margin: 0;
+    padding:15px ;
+    max-width: 50%;
+    color: rgb(226, 226, 226);
+    background-color: rgba(40, 125, 192, 0.90);
+}
+.date__items{
+    padding-left: 20px;
+    text-indent:-20px;
+}
+
+
+@media (max-width:960px){
+    .progress{
+        background-position:  100% 100%;
+        background-size: cover;
+    }
+    .progress__date{
+        max-width: 80%;
+    }
+}
+@media (max-width:720px){
+    .progress{
+        height: 370px;
+        padding-top:0px ;
+      
+    }
+    .progress__date{
+        max-width: 100%;
+    }
+    .date__items{
+        margin:0 0 3px 0;
+    }
+}
+@media (max-width:540px){
+    .progress{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 240px;
+      
+    }
+    .progress__date{
+        padding: 7px;
+        font-size: 12px;
+    }
+    .date__medal{
+        width: 14px;
+        height: 14px;
+    }
+}

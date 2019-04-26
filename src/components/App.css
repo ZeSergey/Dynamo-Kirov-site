@@ -1,0 +1,33 @@
+/*slider*/
+@font-face {
+    font-family: 'RussianLandCyrillic';
+    src: url("../fonts/RussianLandCyrillic.eot");
+    src: url("../fonts/RussianLandCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/RussianLandCyrillic.ttf") format("truetype"), url("../fonts/RussianLandCyrillic.woff") format("woff");
+}
+/*textBlock*/
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url("../fonts/PTSans-Regular.eot");
+    src: url("../fonts/PTSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSans-Regular.ttf") format("truetype"), url("../fonts/PTSans-Regular.woff") format("woff");
+}
+
+/* label*/
+@font-face {
+    font-family: 'BravoRG';
+    src: url("../fonts/BravoRG.eot");
+    src: url("../fonts/BravoRG.eot?#iefix") format("embedded-opentype"), url("../fonts/BravoRG.ttf") format("truetype"), url("../fonts/BravoRG.woff") format("woff");
+}  
+body{
+    margin: 0px;
+}
+.content{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: #fff;
+}
+@media (max-width:960px){
+    content{
+        max-width: 100%;
+
+    }
+}

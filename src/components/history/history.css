@@ -1,0 +1,57 @@
+
+.history{
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(./img/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: 42% ;
+}
+
+.history__text{
+    font-family: 'PTSans-Regular', arial;
+    font-size: 14px;
+    margin: 0;
+    padding:15px ;
+    max-width: 50%;
+    color: rgb(226, 226, 226);
+    background-color: rgba(40, 125, 192, 0.90);
+
+}
+.year{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+}
+.history__items{
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+@media (max-width:960px){
+    .history{
+        flex-direction:row;
+        justify-content: space-around;
+        background-position:  center;
+    }
+    .history__text{
+        max-width: 80%;
+    }
+}
+@media (max-width:720px){
+    .history__text{
+        max-width: 100%;
+    }
+    .history__items{
+        padding-bottom: 2px;
+    }
+}
+@media (max-width:540px){
+    .history br {
+        display: none;
+    }
+    .history__text{
+       padding: 7px;
+       font-size: 12px;
+    }
+}

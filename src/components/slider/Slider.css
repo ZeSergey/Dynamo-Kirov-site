@@ -1,0 +1,207 @@
+
+@keyframes forImgB {
+    0% {
+        opacity: 0.5;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    3%{opacity: 1;}   
+    30% {
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-filter: blur(1.8px);
+              filter: blur(1.8px);
+
+    }
+    50% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-filter: blur(1.6px);
+              filter: blur(1.6px);
+    }
+    60% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-filter: blur(1.5px);
+              filter: blur(1.5px);
+    }
+    80% {
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-filter: blur(1.6px);
+              filter: blur(1.6px);
+              
+    }
+    97%{opacity: 1;}   
+    100% {
+        opacity: 0.5;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+  }
+
+  @keyframes forImgS {
+    0% {
+        opacity: 0.5;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+            
+    }
+    3%{opacity: 1;} 
+    
+    30% {
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-filter: blur(0.8px);
+              filter: blur(0.8px);
+
+    }
+    50% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+        -webkit-filter: blur(0.5px);
+                filter: blur(0.5px);
+    }
+    60% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-filter: blur(0.8px);
+              filter: blur(0.8px);
+    }
+    80% {
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02);
+      -webkit-filter: blur(0.8px);
+              filter: blur(0.8px);
+              
+    }
+    97%{opacity: 1;}  
+    100% {
+        opacity: 0.5;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+  }
+
+.slider {
+    max-width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid #000000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    -webkit-animation: forImgB 10s linear infinite alternate;
+        animation: forImgB  10s linear infinite alternate;
+
+}
+.slideHide{
+    display: none;
+}
+
+.slider__logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(./img/newLogo50.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.text__items {
+    display: inline-block;
+    margin: 50px 0 0 50px;
+}
+
+.text__item {
+    color: #3d76c5;
+    font-family: Georgia ,'Century Schoolbook L',	Serif;
+    font-size: 26px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.text__item-big {
+    text-align: left;
+    font-family: 'RussianLandCyrillic';
+    font-size: 110px;
+    color: #2E5B99;
+    margin: 0px;
+    text-shadow: 1px 1px 2px white;
+}
+
+.text__item-small {
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    font-size: 10px;
+    color: #ccc;
+    text-align: center;
+}
+
+@media (max-width:960px){
+    .slider{
+        height: 450px;
+    }
+    .slider__logo{
+        background-position: 100% ;
+    }
+}
+@media (max-width:720px){
+    .slider{
+        height: 350px;
+    }
+    .slider__logo{
+        background-position: center ;
+    }
+}
+
+@media (max-width:540px){
+    .slider{
+        height: 250px;
+    }
+    .slider__logo{
+        background-image: none;
+    }
+    .text__items {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        margin: 0;
+    }
+    .text__item-big {
+        text-align: center;
+        font-size: 80px;
+        
+    }
+    .text__item {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .text__item-small {
+        font-size: 8px;
+        
+    }
+    .slide{
+        animation: forImgS 10s linear infinite alternate;
+    }
+    
+}
