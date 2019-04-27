@@ -20,15 +20,34 @@ const Slider = ()=>{
         }
     };
     const ImgSlider =()=>{
-        const cashImg = ()=>{
-            if(count <=9){
-                return count+1
+        const sizeScr = window.innerWidth;
+        const nameImg = ()=>{
+            if(sizeScr > 540){
+                return `${count}`
+            }else{
+                return `${count}min`
             }
-            return count
         }
+        const cashImg = ()=>{
+            if(window.innerWidth > 540){
+                if(count <=9){
+                    return `${count+1}`
+                }
+                return `${count}`  
+
+            }else{
+                if(count <=9){
+                    return `${count+1}min`
+                }
+                return `${count}`
+            }
+            
+        }
+
+
         return (
             <>
-                <img className='slide' src={require(`./img/${count}.jpg`)} alt='Динамо Киров'/>
+                <img className='slide' src={require(`./img/${nameImg()}.jpg`)} alt='Динамо Киров'/>
                 <img className='slideHide' src={require(`./img/${cashImg()}.jpg`)} alt='FCDK'/>
             </>
         )
