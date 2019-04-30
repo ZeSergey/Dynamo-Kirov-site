@@ -1,10 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import App from "./components/App.js";
+import showVisible from './otner';
 
-
-
-
-
-
-ReactDOM.render(<App />, document.getElementById("root"));
+showVisible();
+window.onscroll = showVisible;

@@ -9,7 +9,7 @@ const Progress = () =>{
     }
     return(
         <div className='progress'>
-            <div className='progress__date'>
+            <div className='progress__date' data-anim-side='left'>
                 <p className='date__items'><IconMed color = 'gold'/> Победитель Спартакиады народов РСФСР (финальная стадия для команд-мастеров класса "Б"): 1959</p>
                 <p className='date__items'><IconMed color = 'silver'/> Серебряный призёр Чемпионата РСФСР: 1963</p>
                 <p className='date__items'><IconMed color = 'gold'/> Победитель Чемпионата РСФСР: 1981</p>

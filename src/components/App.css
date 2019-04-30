@@ -16,7 +16,37 @@
     font-family: 'BravoRG';
     src: url("../fonts/BravoRG.eot");
     src: url("../fonts/BravoRG.eot?#iefix") format("embedded-opentype"), url("../fonts/BravoRG.ttf") format("truetype"), url("../fonts/BravoRG.woff") format("woff");
-}  
+} 
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 100;
+
+    }
+}
+@keyframes animSideRight {
+    from {
+        margin-right: -150px;
+    }
+  
+    to {
+        margin-right: 0px;
+    }
+}
+@keyframes animSideLeft {
+    from {
+        margin-left: -150px;
+    }
+    to {
+        margin-left: 0px;
+    }
+}
+
+
 body{
     margin: 0px;
 }
@@ -25,9 +55,33 @@ body{
     margin: 0 auto;
     background: #fff;
 }
+
+
+/* animation */
+.block.anim{
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+.animSideRight{
+    animation-duration: 2s;
+    animation-name: animSideRight;   
+}
+.animSideLeft{
+    animation-duration: 2s;
+    animation-name: animSideLeft;  
+}
+
+
 @media (max-width:960px){
     content{
         max-width: 100%;
 
     }
+}
+@media (max-width:540px){
+    .animSideRight ,.animSideLeft{
+        animation-duration: 2s;
+        animation-name: slidein;   
+    }
+    
 }

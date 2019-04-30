@@ -19,7 +19,7 @@ const TextItems = ({children}) =>{
 
     return (
         <div className='history'>
-            <div className='history__text'>
+            <div className='history__text' data-anim-side='rigth'>
                 <TextItems>Прообразом кировского «Динамо» является клуб железнодорожников «Спорт», чемпион городского первенства <Year>1922</Year> года.</TextItems>
                 <br/>
                 <TextItems>
