@@ -109,10 +109,6 @@
         animation: forImgB  10s linear infinite alternate;
 
 }
-.slideHide{
-    display: none;
-}
-
 .slider__logo{
     position: absolute;
     top: 0;
