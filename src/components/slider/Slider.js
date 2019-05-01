@@ -5,43 +5,43 @@ const colectionSlider = [
     {
         src:'./img/1.jpg',
         srcMin:'./img/1min.jpg',
-        alt:'Динамо1',
+        alt:'Динамо Киров',
     }, {
         src:'./img/2.jpg',
         srcMin:'./img/2min.jpg',
-        alt:'Динамо2',
+        alt:'Динамо Вятка',
     }, {
         src:'./img/3.jpg',
         srcMin:'./img/3min.jpg',
-        alt:'Динамо3',
+        alt:'Динмаш Киров',
     }, {
         src:'./img/4.jpg',
         srcMin:'./img/4min.jpg',
-        alt:'Динамо4',
+        alt:'Динамо-Машиностроитель Киров',
     }, {
         src:'./img/5.jpg',
         srcMin:'./img/5min.jpg',
-        alt:'Динамо5',
+        alt:'FCDK',
     }, {
         src:'./img/6.jpg',
         srcMin:'./img/6min.jpg',
-        alt:'Динамо6',
+        alt:'ФК ДК',
     }, {
         src:'./img/7.jpg',
         srcMin:'./img/7min.jpg',
-        alt:'Динамо7',
+        alt:'Кировское Динамо',
     }, {
         src:'./img/8.jpg',
         srcMin:'./img/8min.jpg',
-        alt:'Динамо8',
+        alt:'Вятское Динамо',
     }, {
         src:'./img/9.jpg',
         srcMin:'./img/9min.jpg',
-        alt:'Динамо9',
+        alt:'футбол Киров',
     }, {
         src:'./img/10.jpg',
         srcMin:'./img/10min.jpg',
-        alt:'Динамо10',
+        alt:'Динамо из Кирова',
     },
 ]
 const sizeScr =  window.onresize =()=>{
@@ -62,7 +62,7 @@ const Slider = ()=>{
     const [count , setCount] = useState(0);
 
     useEffect(()=>{
-        const timeout = setInterval(showSlider, 10000);
+        const timeout = setInterval(showSlider, 9900);
         return () => {        
             clearInterval(timeout);
         };

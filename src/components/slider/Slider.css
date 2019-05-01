@@ -105,8 +105,7 @@
 .slide{
     width: 100%;
     height: 100%;
-    -webkit-animation: forImgB 10s linear infinite alternate;
-        animation: forImgB  10s linear infinite alternate;
+    animation: forImgB  10.2s linear alternate;
 
 }
 .slider__logo{
@@ -197,7 +196,7 @@
         
     }
     .slide{
-        animation: forImgS 10s linear infinite alternate;
+        animation: forImgS 10.2s linear infinite alternate;
     }
     
 }
