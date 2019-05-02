@@ -63,11 +63,11 @@ body{
     animation-name: slidein;
 }
 .animSideRight{
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: animSideRight;   
 }
 .animSideLeft{
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: animSideLeft;  
 }
 
